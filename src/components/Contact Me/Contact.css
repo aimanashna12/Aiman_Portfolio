@@ -1,0 +1,116 @@
+.heading  {
+    font-size: 3rem;
+    font-weight: 500;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.Contactus .concontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.map {
+    margin: 2rem;
+}
+.skillTitle {
+    font-size: 3rem;
+    font-weight: 500;
+    border-top: 1.5px solid grey;
+    border-bottom: 1.5px solid grey;
+    padding: 1.5rem;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin: 2rem auto;
+    max-width: 100vw;
+    animation: slideInFade 1.2s ease-out forwards;
+}
+
+@keyframes slideInFade {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skillTitle::before,
+.skillTitle::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: coral;
+    transition: width 0.8s ease-out;
+}
+
+.skillTitle::before {
+    top: 0;
+    left: 0;
+}
+
+.skillTitle::after {
+    bottom: 0;
+    right: 0;
+}
+
+.skillTitle:hover::before,
+.skillTitle:hover::after {
+    width: 100%;
+}
+.conhead {
+    color: coral;
+    margin: 2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.inputbox {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px lightblue solid;
+}
+.inputbox span {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.inputbox input {
+    width: 100%;
+    padding: 1.25rem;
+    font-size: 1.2rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+}
+.form {
+    text-align: center;
+}
+
+.hire {
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: coral;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.hire:hover {
+    transform: scale(1.05);
+    background: coral;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.hire:active {
+    transform: scale(0.95);
+}

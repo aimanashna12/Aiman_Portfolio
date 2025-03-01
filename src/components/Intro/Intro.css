@@ -1,0 +1,100 @@
+#intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 90rem;
+    margin: 0;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    top: -2rem;
+    z-index: -1;
+    right: 0;
+    object-fit: cover;
+    height: 100vh;
+    width: 25vw;
+    bottom: 0;
+}
+
+.introContent {
+    height: 100vh;
+    width: 88vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    margin-left: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    overflow-x: hidden;
+}
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;   
+}
+
+.introName {
+    color: coral; 
+    animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 20px coral;
+    }
+    to {
+      text-shadow: 0 0 30px coral, 0 0 10px coral;
+    }
+  }
+.introPara {
+    font-size: medium;
+    font-weight: 100;
+}
+.btn {
+    background: white;
+    margin: 1 rem 0;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.hire {
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: coral;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+@media screen and (max-width: 840px) {
+    .bg {
+        right: -10vw;
+    }
+    .introContent {
+        font-size: 10vw;
+    }
+    .hello {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bg {
+        right: -20vw;
+    }
+}
